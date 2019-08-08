@@ -1,11 +1,15 @@
 const express = require('express');
-const path = require('path')
+
 
 const app = express();
 
+const PORT = process.env.PORT || 8080;
 
-app.get('/', function (req, res) {
-    res.send('Hello World')
-  })
-   
-  app.listen(3000)
+
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
+
+
+app.listen(PORT, function() {
+  console.log("App is listening on PORT: " + PORT);
+});

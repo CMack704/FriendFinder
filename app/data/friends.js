@@ -1,4 +1,5 @@
-[
+
+var friendsArray = [
     {
         "name": "Tony Stark",
         "photo": "../public/imgs/ironman.jfif",
@@ -63,4 +64,7 @@
             4
         ]
     }
-]
+];
+
+
+module.exports = friendsArray;
