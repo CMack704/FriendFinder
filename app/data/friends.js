@@ -1,5 +1,5 @@
 
-var friendsArray = [
+const friendsArray = [
     {
         "name": "Tony Stark",
         "photo": "../public/imgs/ironman.jfif",
